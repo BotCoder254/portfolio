@@ -1,0 +1,61 @@
+<section id="hero" class="min-h-screen flex items-center justify-center relative overflow-hidden">
+    <!-- Background Animation -->
+    <div class="absolute inset-0">
+        <div class="absolute inset-0 grid grid-cols-12 gap-2 transform -skew-y-12 scale-150 opacity-20">
+            <div class="col-span-2 bg-blue-500/30 blur-xl animate-pulse"></div>
+            <div class="col-span-5 bg-purple-500/30 blur-xl animate-pulse delay-100"></div>
+            <div class="col-span-3 bg-green-500/30 blur-xl animate-pulse delay-200"></div>
+        </div>
+    </div>
+
+    <div class="container mx-auto px-4 grid md:grid-cols-2 gap-16 items-center relative z-10">
+        <div class="space-y-8">
+            <div class="space-y-4">
+                <p class="text-blue-400 font-medium text-lg tracking-wide" id="hero-greeting">
+                    <span class="inline-block animate-bounce">👋</span> Hello, I'm
+                </p>
+                <h1 class="text-6xl md:text-7xl font-bold mb-4 tracking-tight text-gradient" id="hero-title">
+                    TELVIN TEUM
+                </h1>
+                <h2 class="text-3xl md:text-4xl font-bold text-gray-400 tracking-tight" id="hero-role">
+                    Full Stack JavaScript Developer
+                </h2>
+                <p class="text-xl text-gray-400 leading-relaxed max-w-2xl" id="hero-subtitle">
+                    Based in Nairobi, Kenya. Dedicated to building exceptional digital experiences with modern web technologies.
+                </p>
+            </div>
+
+            <div class="flex flex-wrap gap-4" id="hero-cta">
+                <a href="#projects" class="group bg-gradient-to-r from-blue-500 to-purple-500 px-8 py-4 rounded-full 
+                   transition-all duration-300 inline-flex items-center gap-2 text-lg font-medium
+                   hover:shadow-lg hover:shadow-blue-500/25 hover:scale-105">
+                    View My Work 
+                    <i class="fas fa-arrow-right group-hover:translate-x-1 transition-transform"></i>
+                </a>
+                <a href="mailto:telvivaztelvin@gmail.com" class="group glass-effect px-8 py-4 rounded-full transition-all duration-300 
+                   text-lg font-medium hover:shadow-lg hover:shadow-purple-500/25 hover:scale-105">
+                    Contact Me
+                </a>
+            </div>
+
+            <div class="flex gap-8" id="hero-social">
+                <a href="https://github.com/BotCoder254" target="_blank" class="text-gray-400 hover:text-blue-400 transition-colors">
+                    <i class="fab fa-github text-3xl"></i>
+                </a>
+                <a href="[Your LinkedIn]" target="_blank" class="text-gray-400 hover:text-blue-400 transition-colors">
+                    <i class="fab fa-linkedin text-3xl"></i>
+                </a>
+                <a href="mailto:telvivaztelvin@gmail.com" class="text-gray-400 hover:text-blue-400 transition-colors">
+                    <i class="fas fa-envelope text-3xl"></i>
+                </a>
+            </div>
+        </div>
+
+        <div class="hidden md:block relative">
+            <div class="absolute inset-0 bg-gradient-to-r from-blue-500 to-purple-500 rounded-full blur-3xl opacity-20 animate-pulse"></div>
+            <div class="relative z-10 bg-gradient-to-r from-blue-500/10 to-purple-500/10 p-2 rounded-full backdrop-blur-sm">
+                <img src="/images/profile.jpg" alt="TELVIN TEUM" class="rounded-full w-96 h-96 object-cover gradient-border hover:scale-105 transition-all duration-300">
+            </div>
+        </div>
+    </div>
+</section>

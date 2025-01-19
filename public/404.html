@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Page Not Found - Redirecting...</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <script>
+        // Handle GitHub Pages SPA routing
+        window.onload = function() {
+            const segment = window.location.pathname.split('/').pop();
+            const redirectTo = window.location.origin + (segment ? '/#' + segment : '');
+            setTimeout(() => {
+                window.location.replace(redirectTo);
+            }, 100);
+        }
+    </script>
+</head>
+<body class="bg-gradient-to-br from-gray-900 via-gray-800 to-gray-900 text-white min-h-screen flex items-center justify-center">
+    <div class="text-center glass-effect p-8 rounded-lg">
+        <h1 class="text-4xl font-bold mb-4 text-gradient">Redirecting...</h1>
+        <p class="text-gray-400">Please wait while we take you to the right place.</p>
+        <div class="loading-spinner mt-6">
+            <div class="spinner-outer"></div>
+            <div class="spinner-inner"></div>
+        </div>
+    </div>
+</body>
+</html> 
